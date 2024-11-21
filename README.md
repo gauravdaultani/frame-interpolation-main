@@ -219,11 +219,6 @@ If a GPU is visible, it runs on it.
 
 The above command will produce the PSNR and SSIM scores presented in the paper.
 
-## Citation
-
-If you find this implementation useful in your works, please acknowledge it
-appropriately by citing:
-
 ```
 @inproceedings{reda2022film,
  title = {FILM: Frame Interpolation for Large Motion},
@@ -243,13 +238,6 @@ appropriately by citing:
   howpublished = {\url{https://github.com/google-research/frame-interpolation}}
 }
 ```
-Contact: Fitsum Reda (fitsum@google.com)
-
-## Acknowledgments
-
-We would like to thank Richard Tucker, Jason Lai and David Minnen. We would also
-like to thank Jamie Aspinall for the imagery included in this repository.
-
 ## Coding style
 
 *   2 spaces for indentation
