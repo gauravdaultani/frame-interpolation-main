@@ -24,7 +24,7 @@ The Vimeo-90K dataset is a large-scale, high-quality video dataset designed for 
 
 This dataset provides diverse and high-quality video sequences, making it ideal for training and testing frame interpolation models.
 
-More about the dataset can be found in the original publication: [Video Enhancement with Task-Oriented Flow](https://paperswithcode.com/dataset/vimeo-90k).
+More about the dataset can be found in the original publication: [Video Enhancement with Task-Oriented Flow](https://paperswithcode.com/dataset/vimeo90k-1).
 
 ---
 
