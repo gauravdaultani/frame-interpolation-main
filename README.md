@@ -1,31 +1,51 @@
-# Frame Interpolation for Satellite Data
+<!-- : Frame Interpolation for Large Motion -->
 
-TensorFlow 2 implementation of a high-quality frame interpolation neural network, adapted for satellite data. This project leverages the powerful model to interpolate frames from satellite imagery, enabling smooth transitions and enhanced temporal resolution between consecutive satellite images.
+### [Project](https://film-net.github.io/) | [Paper](https://arxiv.org/pdf/2202.04901.pdf) | [YouTube](https://www.youtube.com/watch?v=OAD-BieIjH4) | [Benchmark Scores](https://github.com/google-research/frame-interpolation) <br>
 
-## Team Members
-- **Gaurav Daultani**  
-- **Nandini Bansal**  
-- **Mohd Sahil**  
+Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn't use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone. <br>ttps://www.youtube.com/watch?v=OAD-BieIjH4
 
----
+[FILM: Frame Interpolation for Large Motion](https://arxiv.org/abs/2202.04901) <br />
+[Fitsum Reda](https://scholar.google.com/citations?user=quZ_qLYAAAAJ&hl=en), [Janne Kontkanen](https://scholar.google.com/citations?user=MnXc4JQAAAAJ&hl=en), [Eric Tabellion](http://www.tabellion.org/et/), [Deqing Sun](https://deqings.github.io/), [Caroline Pantofaru](https://scholar.google.com/citations?user=vKAKE1gAAAAJ&hl=en), [Brian Curless](https://homes.cs.washington.edu/~curless/)<br />
+Google Research <br />
+Technical Report 2022.
 
-## **Overview**
+![A sample 2 seconds moment.](https://github.com/googlestaging/frame-interpolation/blob/main/moment.gif)
+FILM transforms near-duplicate photos into a slow motion footage that look like it is shot with a video camera.
 
-Our implementation utilizes the original model to interpolate satellite data images. Unlike traditional approaches that rely on pre-trained networks (e.g., optical flow or depth), our unified approach achieves state-of-the-art results using only a single network. This can be used for tasks like enhancing temporal resolution, analyzing environmental changes, and generating intermediate frames for visualization purposes.
+## Web Demo
 
----
+Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the Web Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/frame-interpolation)
 
-## **Try it Out**
+Try the interpolation model with the replicate web demo at 
+[![Replicate](https://replicate.com/google-research/frame-interpolation/badge)](https://replicate.com/google-research/frame-interpolation)
 
-### **Web Demo**
-Experience the interpolation model with satellite imagery directly through:  
-[**Hugging Face Spaces Web Demo**](https://huggingface.co/spaces)  
+## Installation
 
-### **Replicate Web Demo**
-Try another hosted version here:  
-[**Replicate Web Demo**](https://replicate.com)
+*   Get Frame Interpolation source codes
 
----
+```
+> git clone https://github.com/google-research/frame-interpolation frame_interpolation
+```
+
+*   Optionally, pull the recommended Docker base image
+
+```
+> docker pull gcr.io/deeplearning-platform-release/tf2-gpu.2-6:latest
+```
+
+*   Install dependencies
+
+```
+> pip3 install -r frame_interpolation/requirements.txt
+> apt-get install ffmpeg
+```
+
+## Pre-trained Models
+
+*   Create a directory where you can keep large files. Ideally, not in this
+    directory.
+
+```
 > mkdir <pretrained_models>
 ```
 
@@ -199,6 +219,11 @@ If a GPU is visible, it runs on it.
 
 The above command will produce the PSNR and SSIM scores presented in the paper.
 
+## Citation
+
+If you find this implementation useful in your works, please acknowledge it
+appropriately by citing:
+
 ```
 @inproceedings{reda2022film,
  title = {FILM: Frame Interpolation for Large Motion},
@@ -218,6 +243,13 @@ The above command will produce the PSNR and SSIM scores presented in the paper.
   howpublished = {\url{https://github.com/google-research/frame-interpolation}}
 }
 ```
+Contact: Fitsum Reda (fitsum@google.com)
+
+## Acknowledgments
+
+We would like to thank Richard Tucker, Jason Lai and David Minnen. We would also
+like to thank Jamie Aspinall for the imagery included in this repository.
+
 ## Coding style
 
 *   2 spaces for indentation
