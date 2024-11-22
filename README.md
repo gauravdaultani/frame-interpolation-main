@@ -3,11 +3,10 @@
 ![Earth Image](photos/earth_1.png)
 
 ### Final Frame
-![](path_to_image_2.jpg)
+![Earth Image](photos/earth_2.png)
 
 ### Interpolated Video
-![](path_to_video.mp4)
-
+![Earth Video](photos/interpolation.mp4)
 *(For Markdown viewers that do not support video playback, the video can be downloaded and played offline.)*
 
 ---
