@@ -1,6 +1,6 @@
 # Frame Interpolation for Satellite Data
 
-TensorFlow 2 implementation of a high-quality frame interpolation neural network, adapted for satellite data. This project leverages the powerful **FILM** (Frame Interpolation for Large Motion) model to interpolate frames from satellite imagery, enabling smooth transitions and enhanced temporal resolution between consecutive satellite images.
+TensorFlow 2 implementation of a high-quality frame interpolation neural network, adapted for satellite data. This project leverages the powerful model to interpolate frames from satellite imagery, enabling smooth transitions and enhanced temporal resolution between consecutive satellite images.
 
 ## Team Members
 - **Gaurav Daultani**  
@@ -26,21 +26,6 @@ Try another hosted version here:
 [**Replicate Web Demo**](https://replicate.com)
 
 ---
-
-## **Installation**
-
-### **Clone the Repository**
-```bash
-git clone https://github.com/gauravdaultani/frame-interpolation-main.git
-cd frame-interpolation-main
-
-
-## Pre-trained Models
-
-*   Create a directory where you can keep large files. Ideally, not in this
-    directory.
-
-```
 > mkdir <pretrained_models>
 ```
 
