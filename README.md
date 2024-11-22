@@ -1,12 +1,12 @@
 
-### Image 1
-![Image Description 1](path_to_image_1.jpg)
+### Initial Frame
+![Earth Image](photos/earth_1.png)
 
-### Image 2
-![Image Description 2](path_to_image_2.jpg)
+### Final Frame
+![](path_to_image_2.jpg)
 
-### Video Demonstration
-![Video Title](path_to_video.mp4)
+### Interpolated Video
+![](path_to_video.mp4)
 
 *(For Markdown viewers that do not support video playback, the video can be downloaded and played offline.)*
 
