@@ -11,7 +11,7 @@ TensorFlow 2 implementation of a high-quality frame interpolation neural network
 
 ## **Overview**
 
-Our implementation utilizes the original FILM model to interpolate satellite data images. Unlike traditional approaches that rely on pre-trained networks (e.g., optical flow or depth), our unified approach achieves state-of-the-art results using only a single network. This can be used for tasks like enhancing temporal resolution, analyzing environmental changes, and generating intermediate frames for visualization purposes.
+Our implementation utilizes the original model to interpolate satellite data images. Unlike traditional approaches that rely on pre-trained networks (e.g., optical flow or depth), our unified approach achieves state-of-the-art results using only a single network. This can be used for tasks like enhancing temporal resolution, analyzing environmental changes, and generating intermediate frames for visualization purposes.
 
 ---
 
