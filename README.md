@@ -6,7 +6,7 @@
 ![Earth Image](photos/earth_2.png)
 
 ### Interpolated Video
-![Earth Video](photos/interpolation.mp4)
+![Earth Video](interpolation.gif)
 *(For Markdown viewers that do not support video playback, the video can be downloaded and played offline.)*
 
 ---
