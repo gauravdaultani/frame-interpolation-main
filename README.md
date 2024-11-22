@@ -1,44 +1,39 @@
-<!-- : Frame Interpolation for Large Motion -->
+# Frame Interpolation for Satellite Data
 
-### [Project](https://film-net.github.io/) | [Paper](https://arxiv.org/pdf/2202.04901.pdf) | [YouTube](https://www.youtube.com/watch?v=OAD-BieIjH4) | [Benchmark Scores](https://github.com/google-research/frame-interpolation) <br>
+TensorFlow 2 implementation of a high-quality frame interpolation neural network, adapted for satellite data. This project leverages the powerful **FILM** (Frame Interpolation for Large Motion) model to interpolate frames from satellite imagery, enabling smooth transitions and enhanced temporal resolution between consecutive satellite images.
 
-Tensorflow 2 implementation of our high quality frame interpolation neural network. We present a unified single-network approach that doesn't use additional pre-trained networks, like optical flow or depth, and yet achieve state-of-the-art results. We use a multi-scale feature extractor that shares the same convolution weights across the scales. Our model is trainable from frame triplets alone. <br>ttps://www.youtube.com/watch?v=OAD-BieIjH4
+## Team Members
+- **Gaurav Daultani**  
+- **Nandini Bansal**  
+- **Mohd Sahil**  
 
-[FILM: Frame Interpolation for Large Motion](https://arxiv.org/abs/2202.04901) <br />
-[Fitsum Reda](https://scholar.google.com/citations?user=quZ_qLYAAAAJ&hl=en), [Janne Kontkanen](https://scholar.google.com/citations?user=MnXc4JQAAAAJ&hl=en), [Eric Tabellion](http://www.tabellion.org/et/), [Deqing Sun](https://deqings.github.io/), [Caroline Pantofaru](https://scholar.google.com/citations?user=vKAKE1gAAAAJ&hl=en), [Brian Curless](https://homes.cs.washington.edu/~curless/)<br />
-Google Research <br />
-Technical Report 2022.
+---
 
-![A sample 2 seconds moment.](https://github.com/googlestaging/frame-interpolation/blob/main/moment.gif)
-FILM transforms near-duplicate photos into a slow motion footage that look like it is shot with a video camera.
+## **Overview**
 
-## Web Demo
+Our implementation utilizes the original FILM model to interpolate satellite data images. Unlike traditional approaches that rely on pre-trained networks (e.g., optical flow or depth), our unified approach achieves state-of-the-art results using only a single network. This can be used for tasks like enhancing temporal resolution, analyzing environmental changes, and generating intermediate frames for visualization purposes.
 
-Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the Web Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/frame-interpolation)
+---
 
-Try the interpolation model with the replicate web demo at 
-[![Replicate](https://replicate.com/google-research/frame-interpolation/badge)](https://replicate.com/google-research/frame-interpolation)
+## **Try it Out**
 
-## Installation
+### **Web Demo**
+Experience the interpolation model with satellite imagery directly through:  
+[**Hugging Face Spaces Web Demo**](https://huggingface.co/spaces)  
 
-*   Get Frame Interpolation source codes
+### **Replicate Web Demo**
+Try another hosted version here:  
+[**Replicate Web Demo**](https://replicate.com)
 
-```
-> git clone https://github.com/google-research/frame-interpolation frame_interpolation
-```
+---
 
-*   Optionally, pull the recommended Docker base image
+## **Installation**
 
-```
-> docker pull gcr.io/deeplearning-platform-release/tf2-gpu.2-6:latest
-```
+### **Clone the Repository**
+```bash
+git clone https://github.com/gauravdaultani/frame-interpolation-main.git
+cd frame-interpolation-main
 
-*   Install dependencies
-
-```
-> pip3 install -r frame_interpolation/requirements.txt
-> apt-get install ffmpeg
-```
 
 ## Pre-trained Models
 
