@@ -1,14 +1,14 @@
-# Frame Interpolation 
 
-Frame interpolation is the process of synthesizing intermediate frames between two consecutive images or frames in a video sequence. This project leverages machine learning techniques to enhance the temporal resolution of videos by generating intermediate frames with high accuracy.
+### Image 1
+![Image Description 1](path_to_image_1.jpg)
 
----
+### Image 2
+![Image Description 2](path_to_image_2.jpg)
 
-## Team Members
+### Video Demonstration
+![Video Title](path_to_video.mp4)
 
-- **Gaurav Daultani**
-- **Nandini Bansal**
-- **Mohd Sahil**
+*(For Markdown viewers that do not support video playback, the video can be downloaded and played offline.)*
 
 ---
 
