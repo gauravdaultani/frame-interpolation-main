@@ -14,11 +14,11 @@ Frame interpolation is the process of synthesizing intermediate frames between t
 
 ## Visualization
 
-### Initial Frame
-![Earth Image](photos/earth_1.png)
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <img src="photos/earth_1.png" alt="Initial Frame" style="height: 200px; margin-right: 10px;">
+  <img src="photos/earth_2.png" alt="Final Frame" style="height: 200px;">
+</div>
 
-### Final Frame
-![Earth Image](photos/earth_2.png)
 
 ### Interpolated Video
 ![Earth Video](interpolation.gif)
