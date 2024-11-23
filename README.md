@@ -46,8 +46,7 @@ More about the dataset can be found in the original publication: [Video Enhancem
 
 We provide pre-trained models to demonstrate the effectiveness of our approach. These models are trained on the Vimeo90K dataset and optimized for high-quality frame interpolation tasks.
 
-- **Model 1**: [Download Link](https://github.com/google-research/frame-interpolation)  
-- **Model 2**: [Download Link](https://github.com/danier97/LDMVFI)
+- **Model **: [Download Link](https://keras.io/api/applications/vgg/)  
 
 You can use these models for inference or fine-tune them for your own dataset.
 
